@@ -21,17 +21,16 @@ select {
 button {
   float: right;
 }
-input:valid {
-  border-color: rgb(0, 122, 31);
-  background-color: rgb(11, 187, 55);
-}
+
 input:invalid {
   border-color: #900;
   background-color: #fdd;
 }
 
 .email-error,
-.zip-code-error {
+.zip-code-error,
+.password-error,
+.confirm-password-error {
   display: block;
   width: 100%;
   margin-top: -15px;
@@ -45,6 +44,8 @@ input:invalid {
 }
 
 .email-error.active,
-.zip-code-error.active {
+.zip-code-error.active,
+.password-error.active,
+.confirm-password-error.active {
   padding: 5px;
 }
