@@ -1,0 +1,50 @@
+body {
+  width: 200px;
+  padding: 0;
+  margin: auto;
+}
+
+input {
+  all: unset;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+select {
+  width: 100%;
+  border: 1px solid #333;
+  font-size: 90%;
+  margin: 3px 0;
+  margin-bottom: 15px;
+}
+button {
+  float: right;
+}
+input:valid {
+  border-color: rgb(0, 122, 31);
+  background-color: rgb(11, 187, 55);
+}
+input:invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+.email-error,
+.zip-code-error {
+  display: block;
+  width: 100%;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.email-error.active,
+.zip-code-error.active {
+  padding: 5px;
+}
